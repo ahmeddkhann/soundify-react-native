@@ -1,15 +1,17 @@
-import { Text, View } from "react-native";
+import { StyleSheet, Text, View, SafeAreaView, StatusBar } from 'react-native'
+import React from 'react'
 
-export default function Index() {
+const index = () => {
   return (
-    <View
-      style={{
-        flex: 1,
-        justifyContent: "center",
-        alignItems: "center",
-      }}
-    >
-      <Text>Edit app/index.tsx to edit this screen.</Text>
-    </View>
-  );
+    <SafeAreaView>
+      <StatusBar/>
+      <View>
+        <Text>App is running fine!</Text>
+      </View>
+    </SafeAreaView>
+  )
 }
+
+export default index
+
+const styles = StyleSheet.create({})
